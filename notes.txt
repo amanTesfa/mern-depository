@@ -1,0 +1,13 @@
+MERN
+mongo db
+express:- ready to use web framework for node js to develop backend
+react
+node :-js runtime to develop serverside scripts
+--------------------------------------------------------------------------------------------
+*npm init -y ==>initialize nodejs application
+*npm install express
+*node xxxx.js==> to run the file//old fasioned
+*if you want to use import statement, change type to "module" in package.jason which default is common js other wise, use require ("XXXX") 
+* to run node script use "npm run" then the script name
+* use ctl+C to kill node process. 
+* to use runtime compilation install nodemon "npm install nodemon -Ds"
