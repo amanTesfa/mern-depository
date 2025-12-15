@@ -5,7 +5,7 @@ import dotenv from "dotenv"
 dotenv.config()
 const app=express()
 app.use("/api/notes",notes)
-const Port=process.env.Port_Num||5001
+const Port=process.env.Port||5001
 connectDb();
 app.listen(Port,()=>{
     console.log("the app started at port",Port)
