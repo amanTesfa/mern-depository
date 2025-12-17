@@ -6,7 +6,9 @@ dotenv.config()
 const app=express()
 app.use("/api/notes",notes)
 const Port=process.env.Port||5001
+const conn=process.env.Mongo_URL;
 connectDb();
 app.listen(Port,()=>{
     console.log("the app started at port",Port)
+   
 })

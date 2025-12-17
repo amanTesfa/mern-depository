@@ -29,4 +29,6 @@ node :-js runtime to develop serverside scripts
   process.exit(0);
 });
 
---
+-----------------------------------------------------------------------------------------
+* to use mongodb, you need to create schema first, then you would like to create model based on that schema
+* js promise is an object that represents, the result of asynchronous operation.it handles, late arraival operations.

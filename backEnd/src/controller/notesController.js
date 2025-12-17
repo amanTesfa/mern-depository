@@ -1,6 +1,14 @@
 import express from "express";
+import Notes from "../models/notes.js"
 export async function getNotes(req,res){
-    res.status(200).send("You have got the messages!")
+    try{
+    const notes=await Notes.find({});
+    res.status(200).json(notes)
+    }catch(err){
+    console.log(err.message)
+    res.status(500)
+    }
+    
 }
 export async function saveNotes (req,res){
     res.status(201).json({message:"Note saved successfully!"})
