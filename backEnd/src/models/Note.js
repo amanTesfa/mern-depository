@@ -7,7 +7,8 @@ const noteSchema = new mongoose.Schema({
 	content: {
 		type: String,
 		required: true
-	}
-})
+	},
+},{timestamps:true})
 const schemaNote = mongoose.model("Note", noteSchema);
 export default schemaNote;
+ 
