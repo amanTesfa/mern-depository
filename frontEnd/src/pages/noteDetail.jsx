@@ -1,6 +1,6 @@
 import React from 'react'
 
-const noteDetailPage = () => {
+const noteDetail = () => {
   return (
     <div>
       note detail
@@ -8,4 +8,4 @@ const noteDetailPage = () => {
   )
 }
 
-export default noteDetailPage
+export default noteDetail

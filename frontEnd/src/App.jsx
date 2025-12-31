@@ -1,17 +1,17 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import HomePages from './pages/homePages'
-import CreatePage from './pages/createPage'
-import NoteDetailPage from './pages/noteDetailPage'
+import Home from './pages/home'
+import Create from './pages/create'
+import NoteDetail from './pages/noteDetail'
 import  { Toaster } from 'react-hot-toast'
 
 const App = () => {
   return (
     <div>
     <Routes>
-      <Route path='/' element={<HomePages />}/>
-      <Route path='/AddNotes' element={<CreatePage />} />
-      <Route path='/NoteDetail' element={<NoteDetailPage />} />
+      <Route path='/' element={<Home />}/>
+      <Route path='/AddNotes' element={<Create />} />
+      <Route path='/NoteDetail' element={<NoteDetail />} />
     </Routes>
     </div>
   )
