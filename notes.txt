@@ -31,4 +31,29 @@ node :-js runtime to develop serverside scripts
 
 -----------------------------------------------------------------------------------------
 * to use mongodb, you need to create schema first, then you would like to create model based on that schema
+*timestams:true, created timestamps for update time and created time
 * js promise is an object that represents, the result of asynchronous operation.it handles, late arraival operations.
+*express.json() is a middleware to get data passed as a body//it will parse json body
+* findByIdAndUpdate new=true, returns the updated data.
+* while fetching data by find(), if we say find().sort({createdAt=-1}) sorts desc. based on the created date. the default is 1.s
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+FrontEnd
+
+* use vite to create reacat application,which will provide flexeble, preformatted environment (npm create vite@lattest .) . is to take the project name as the folder 
+
+* npm packege are case sensetive and they do not accept capital letter, joined words and special characters
+* npm i react-router==> for routing purposes
+* npm i react-hot-toast ==> intall for notification porpuses (small popup) place at the begining of the source component 
+* rfce => shortcut to use react method (intsall es7 extension to get it)
+*use browser router to facilitate client side routing ==> single page application
+* routes abd rout ==> countainer of route and componetes to show at speciic  address
+* install tailwindcss with tailwind intellisense extension
+* add daisy ui plugin of tailwindcss
+* npm i lucide-react ==>for react icon package
+*npm i axios ==>fetching purpose
+* react componet must start with CapitalLetter. if it is small, jsx teat it as html tag
+* tailwind justify-between=>place to left and right
+* useEffect(()=>{},[]) [] is dependency array. when to run the code inside the useEffect. by default empty dependency array bind only once the component mounts. if there is no [] i excutes everytime it rerenders
+*useParams()=>to get passed parameters
+*bg.ibleck.com ==> tailwind paterns for background

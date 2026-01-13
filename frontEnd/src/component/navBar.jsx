@@ -11,7 +11,7 @@ const NavBar = () => {
         <div className='flex justify-between items-center'>
            <h1 className='text-3xl font-bold text-primary font-mono '> Think Board</h1>
         <div className='flex justify-end gap-4'>
-            <Link to={"/addNotes"} className='btn btn-primary'>
+            <Link to={"/AddNotes"} className='btn btn-primary'>
             <PlusIcon className='size-5' />
             <span >New Note</span>
             </Link>

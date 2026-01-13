@@ -30,6 +30,16 @@ res.status(200).json(note)
 res.status(500).json(ex.message)
     }
 }
+export async function getNotesById(req,res){ // you can skip _ if you dont use request/response
+    try{
+const _note=await Note.findById(req.params.id);
+if(!_note)
+    return res.status(404).json({message:"Could not retrive the note"});
+res.status(200).json(_note)
+    }catch(ex){
+            return res.status(404).json({message:ex.message});
+    }
+}
 export async function deleteNotes(req,res){
     try{
 const del= await Note.findByIdAndDelete(req.params.id)
