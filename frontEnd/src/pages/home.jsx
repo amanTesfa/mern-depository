@@ -4,6 +4,7 @@ import NavBar from '../component/navBar'
 import axios from 'axios'
 import NoteCard from '../component/NoteCard'
 import { LoaderIcon } from 'lucide-react'
+import api from '../lib/axios'
 
 const home = () => {
   const [notesBuffer, setNotesBuffer]= useState([])
@@ -14,7 +15,8 @@ const handleDelete= async(ID)=>{
 useEffect(()=>{
     const fetchNotes= async ()=>{
 try {
-  const res= await axios.get("http://localhost:5001/api/notes")
+  console.log("URL is:",api.defaults)
+  const res= await axios.get(api.defaults.baseURL.concat("notes"))
   setNotesBuffer(res.data)
   console.log('loaded data is:',res.data);
 } catch (error) {

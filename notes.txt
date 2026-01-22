@@ -4,7 +4,7 @@ express:- ready to use web framework for node js to develop backend
 react
 node :-js runtime to develop serverside scripts
 --------------------------------------------------------------------------------------------
-*npm init -y ==>initialize nodejs application
+*npm init -y ==>initialize nodejs application (create package.json)
 *npm install express
 *node xxxx.js==> to run the file//old fasioned
 *if you want to use import statement, change type to "module" in package.jason which default is common js other wise, use require ("XXXX") 
@@ -57,3 +57,8 @@ FrontEnd
 * useEffect(()=>{},[]) [] is dependency array. when to run the code inside the useEffect. by default empty dependency array bind only once the component mounts. if there is no [] i excutes everytime it rerenders
 *useParams()=>to get passed parameters
 *bg.ibleck.com ==> tailwind paterns for background
+*render.com cloud application to deploy eg. from git.(supports postgresql). since whe do ignore node modules for both front and back on git, we need to get them while deploying.
+* to do that, we need package.json for poth applications, which automaticaly install the node module(npm init -y)==> under scripts,  (npm install --prefix backend && npm install --prefix frontend)
+* to Run both api and front
+
+

@@ -1,0 +1,21 @@
+{
+  "name": "mern-depository",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix frontEnd  && npm install --prefix backEnd && npm run build --prefix frontEnd"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amanTesfa/mern-depository.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/amanTesfa/mern-depository/issues"
+  },
+  "homepage": "https://github.com/amanTesfa/mern-depository#readme"
+}
